@@ -1,0 +1,59 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>轮播图</title>
+  <link rel="stylesheet" href="../css/index1.css">
+</head>
+<body>
+	<div class="control">
+		<div>
+	<!-- 		<form name="form1" method="post" action="" method="post" enctype="application/x-www-form-urlencoded" target=""> -->
+                  速度：
+		         <input id="speed" type="text" name="speed" placeholder="速度" value="1000" size="15"/>
+		         <button type="button" onclick= "changespeed()">确定</button>
+		    <!-- </form>
+		    <form action="" method="post"> -->
+		    	方向：
+		    	<input type="radio" name="radiodirection" value="right" checked="checked" onclick="Switchdirection = 1"/>
+		    	right
+		    	<input type="radio" name="radiodirection" value="left" onclick="Switchdirection = 0">
+		    	left
+		   <!--  </form>
+		    <form> -->
+		    	图片宽度：
+		    	<input type="text" name="width" id="width" placeholder="宽度"  value="600" size="15" />
+		    	<button type="button" onclick="Switchwidth()">确定</button>
+		    <!-- </form>
+		    <form> -->
+		    	图片高度：
+		    	<input type="text" name="height" id="height" placeholder="高度"value="400" size="15"/>
+		    	<button type="button" onclick="Switchheigh()">确定</button>
+		  <!--   </form> -->
+	    
+	    </div>
+
+	</div>
+  <div class="container" onmouseenter="clearTimer()"
+  onmouseleave="timeStart()" >
+    <div class="wrap" style="left: 0px;" >
+      <img class="img" src="../image/tu1.jpg" alt="图1"/>
+      <img class="img" src="../image/tu2.jpg" alt="图2"/>
+      <img class="img" src="../image/tu3.jpg" alt="图3"/>
+      <img class="img" src="../image/tu4.jpg" alt="图4"/>
+      <img class="img" src="../image/tu5.jpg" alt="图5"/>
+    </div>
+    <div class=""></div>
+    <div class="buttons">
+      <a href="javascript:void(0);" onclick="click0()"><span class="on"></span></a>
+      <a href="javascript:void(0);" onclick="click1()"><span></span></a>
+      <a href="javascript:void(0);" onclick="click2()"><span></span></a>
+      <a href="javascript:void(0);" onclick="click3()"><span></span></a>
+      <a href="javascript:void(0);" onclick="click4()"><span></span></a>
+    </div>
+    <a href="javascript:void (0);" rel="external nofollow" class="arrow arrow_left" onClick="prev()" ><</a>
+    <a href="javascript:void (0);" rel="external nofollow" class="arrow arrow_right" onClick="next()" >></a>
+  </div>
+</body>
+<script src="../js/index1.js"></script>
+</html>
